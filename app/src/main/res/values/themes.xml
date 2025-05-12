@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.HealthSpoon" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- 메인 테마: 반드시 AppCompat 또는 MaterialComponents 기반 -->
+    <style name="Theme.HealthSpoon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 여기에서 전반적인 앱 테마 색상 설정 -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
-    <style name="Theme.HealthSpoon" parent="Base.Theme.HealthSpoon" />
+    <!-- 스플래시 테마 -->
+    <style name="Theme.HealthSpoon.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_spoon</item> <!-- 필요 시 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.HealthSpoon</item> <!-- Android 12+ 전환 테마 -->
+    </style>
+
 </resources>
