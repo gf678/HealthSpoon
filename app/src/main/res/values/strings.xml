@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HealthSpoon</string>
+    <string name="capture_button_text">📷 촬영</string>
 </resources>

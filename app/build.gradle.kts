@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.healthspoon"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.healthspoon"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    val camerax_version = "1.3.0"
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -43,6 +44,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("androidx.camera:camera-camera2:$camerax_version")
+    implementation("androidx.camera:camera-lifecycle:$camerax_version")
+    implementation("androidx.camera:camera-view:$camerax_version")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
