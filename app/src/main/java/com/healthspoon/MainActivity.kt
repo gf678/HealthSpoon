@@ -1,3 +1,4 @@
+//MainActivity.kt
 package com.healthspoon
 
 import android.os.Bundle

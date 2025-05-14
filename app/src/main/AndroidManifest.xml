@@ -30,6 +30,14 @@
         <activity android:name=".ResultActivity"
             android:exported="true"
             android:theme="@style/Theme.HealthSpoon" />
+        <activity android:name=".CalendarActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HealthSpoon"
+            />
+        <activity android:name=".dfdActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HealthSpoon"
+            />
     </application>
 
 </manifest>

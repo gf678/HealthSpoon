@@ -1,0 +1,24 @@
+<!-- res/layout/activity_dfdactivity.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textDateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%월 %일 섭취한 식단 정보"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="130dp"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- 다른 뷰 추가 가능 -->
+</LinearLayout>
